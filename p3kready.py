@@ -67,8 +67,8 @@ def main(args):
             info = get_package_info(client, r.name)
             if not info['py3']:
                 print(info['name'])
-        except Exception:
-            pass
+        except Exception as e:
+            print(e)
 
 
 if __name__ == "__main__":
